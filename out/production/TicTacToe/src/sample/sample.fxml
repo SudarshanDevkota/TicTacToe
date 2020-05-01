@@ -8,22 +8,22 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.HBox?>
 
-<BorderPane xmlns:fx="javafx.com/fxml" fx:controller="sample.Controller" >
+<BorderPane xmlns:fx="javafx.com/fxml" fx:controller="sample.Controller" stylesheets="@styles.css">
     <top>
-    <Label fx:id="overLabel" alignment="CENTER" />
+    <Label fx:id="overLabel" alignment="CENTER"  prefWidth="800"/>
     </top>
     <center>
         <GridPane fx:id="playWindow" vgap="5" hgap="5" alignment="center" >
 
-            <Button fx:id="btn1"  onAction="#playControl" prefWidth="90" prefHeight="90" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
-            <Button fx:id="btn2" onAction="#playControl"   prefWidth="90" prefHeight="90" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
-            <Button fx:id="btn3" onAction="#playControl"  prefWidth="90" prefHeight="90" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
-            <Button fx:id="btn4" onAction="#playControl"  prefWidth="90" prefHeight="90" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
-            <Button fx:id="btn5"  onAction="#playControl" prefWidth="90" prefHeight="90" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-            <Button fx:id="btn6"  onAction="#playControl"  prefWidth="90" prefHeight="90" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-            <Button fx:id="btn7"  onAction="#playControl"  prefWidth="90" prefHeight="90" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
-            <Button fx:id="btn8"  onAction="#playControl"  prefWidth="90" prefHeight="90" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
-            <Button fx:id="btn9" onAction="#playControl"  prefWidth="90" prefHeight="90" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+            <Button fx:id="btn1"  onAction="#playControl" prefWidth="90" prefHeight="90" GridPane.columnIndex="0" GridPane.rowIndex="0" style="-fx-font-size:40px"/>
+            <Button fx:id="btn2" onAction="#playControl"   prefWidth="90" prefHeight="90" GridPane.columnIndex="0" GridPane.rowIndex="1" style="-fx-font-size:40px"/>
+            <Button fx:id="btn3" onAction="#playControl"  prefWidth="90" prefHeight="90" GridPane.columnIndex="0" GridPane.rowIndex="2" style="-fx-font-size:40px"/>
+            <Button fx:id="btn4" onAction="#playControl"  prefWidth="90" prefHeight="90" GridPane.columnIndex="1" GridPane.rowIndex="0" style="-fx-font-size:40px"/>
+            <Button fx:id="btn5"  onAction="#playControl" prefWidth="90" prefHeight="90" GridPane.columnIndex="1" GridPane.rowIndex="1" style="-fx-font-size:40px"/>
+            <Button fx:id="btn6"  onAction="#playControl"  prefWidth="90" prefHeight="90" GridPane.columnIndex="1" GridPane.rowIndex="2" style="-fx-font-size:40px"/>
+            <Button fx:id="btn7"  onAction="#playControl"  prefWidth="90" prefHeight="90" GridPane.columnIndex="2" GridPane.rowIndex="0" style="-fx-font-size:40px"/>
+            <Button fx:id="btn8"  onAction="#playControl"  prefWidth="90" prefHeight="90" GridPane.columnIndex="2" GridPane.rowIndex="1" style="-fx-font-size:40px"/>
+            <Button fx:id="btn9" onAction="#playControl"  prefWidth="90" prefHeight="90" GridPane.columnIndex="2" GridPane.rowIndex="2" style="-fx-font-size:40px"/>
 
         </GridPane>
 
@@ -34,7 +34,7 @@
                 <Insets left="10" bottom="10" top="20" right="10"></Insets>
             </padding>
             <Label text="Player X" />
-            <Button fx:id="playerX" text="0" prefHeight="20" prefWidth="90"/>
+            <Button fx:id="playerX" text="0" prefHeight="20" prefWidth="90" style="-fx-font-size:30px; -fx-background-color:blue"/>
         </VBox>
     </left>
     <right>
@@ -43,7 +43,7 @@
                 <Insets left="10" bottom="10" top="20" right="10"></Insets>
             </padding>
             <Label text="Player O" />
-            <Button fx:id="playerO" text="0" prefHeight="20" prefWidth="90"/>
+            <Button fx:id="playerO" text="0" prefHeight="20" prefWidth="90" style="-fx-font-size:30px; -fx-background-color:red "  />
         </VBox>
     </right>
     <bottom>

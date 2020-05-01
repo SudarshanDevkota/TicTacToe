@@ -5,10 +5,12 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
 
+import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
 
 import java.util.List;
 
@@ -59,6 +61,7 @@ public class Controller {
 public void initialize(){
         playWindow.setVisible(false);
         turnLabel.setText(currentPlayer);
+        overLabel.setAlignment(Pos.CENTER);
 }
 
     @FXML
@@ -90,10 +93,12 @@ public void initialize(){
     public void fillBoard(Button btn, String symbol) {
         if(!isOver){
             if (symbol.equals("X")){
+                btn.setTextFill(Color.BLUE);
                 btn.setText("X");
                 currentPlayer = "O";
 
             } else {
+                btn.setTextFill(Color.RED);
                 btn.setText("O");
                 currentPlayer = "X";
             }
@@ -194,7 +199,7 @@ public void initialize(){
 
     private void  checkDraw(){
         if(turns==9 && isOver==false){
-            System.out.println("Draw");
+           overLabel.setText("Draw");
             isOver=true;
 
         }
