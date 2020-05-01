@@ -66,6 +66,7 @@ public void initialize(){
 
     @FXML
     public void playorReset(ActionEvent e) {
+            turnLabel.setText(currentPlayer);
 
         if (e.getSource().equals(btnPlay)) {
             playWindow.setVisible(true);
