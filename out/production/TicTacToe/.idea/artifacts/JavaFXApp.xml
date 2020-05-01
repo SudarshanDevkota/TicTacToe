@@ -2,9 +2,7 @@
   <artifact type="javafx" name="JavaFXApp">
     <output-path>$PROJECT_DIR$/out/artifacts/JavaFXApp</output-path>
     <root id="root">
-      <element id="archive" name="JavaFXApp.jar">
-        <element id="module-output" name="TicTacToe" />
-      </element>
+      <element id="archive" name="JavaFXApp.jar" />
     </root>
   </artifact>
 </component>
